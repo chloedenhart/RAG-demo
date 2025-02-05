@@ -1,0 +1,10 @@
+streamlit~=1.42.0
+
+langchain
+langchain_openai
+huggingface_hub
+tiktoken
+sentence_transformers
+chromadb==0.3.29
+pypdf
+langchain-community

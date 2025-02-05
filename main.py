@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 
 # session states
@@ -10,6 +8,7 @@ if "chat_history" not in st.session_state:
 ## Store current query (i.e., last user input)
 if "current_query" not in st.session_state:
     st.session_state.current_query = ""
+
 
 def run_chatui():
     st.set_page_config(page_title="🤗💬 RAG Bot")
@@ -39,7 +38,6 @@ def run_chatui():
         message = {"role": "bot", "content": answer}
         st.session_state.chat_history.append(message)
 
+
 if __name__ == "__main__":
     run_chatui()
-
-
